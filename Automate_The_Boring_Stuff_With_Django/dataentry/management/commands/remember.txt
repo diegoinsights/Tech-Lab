@@ -1,0 +1,6 @@
+python manage.py helloworld --help
+
+python manage.py runserver --help
+
+python manage.py collectstatic --help
+
