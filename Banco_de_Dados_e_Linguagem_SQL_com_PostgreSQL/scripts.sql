@@ -322,4 +322,21 @@ select nome || '--' || logradouro || '--' || numero || '--'  || complemento || '
 
 
 
--- ** --
+-- ** -- 							[comandos UPDATE e DELETE]
+
+select * from cliente;
+update cliente set nome = 'Teste' where idcliente = 1;
+update cliente set nome =  'Adriano', genero = 'M', numero = '241' where idcliente = 4;
+insert into cliente (idcliente, nome) values (16, 'João')
+delete from cliente where idcliente = 16;
+
+--*-	[exercicio]
+insert into cliente (
+	idcliente, nome, cpf, rg, data_nascimento, genero, profissao, 
+	nacionalidade, logradouro, numero, complemento, 
+	bairro, municipio, uf) values (16, 'Maicon', 
+								   '12349596421', 
+								   '1234', '1965-10-10', 
+								   'F', 'Empresário', null, 
+								   null, null, null, null, 'Florianópolis', 'PR')
+
