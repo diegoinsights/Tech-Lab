@@ -4,7 +4,7 @@ import scrapy
 
 
 class EbookSpider(scrapy.Spider):
-    name = "ebook"
+    name = "ebook_2"
     start_urls = ["https://books.toscrape.com/"]
 
     def parse(self, response):
@@ -13,4 +13,4 @@ class EbookSpider(scrapy.Spider):
         
         print("\033[92m[ parse ]\033[0m")
         
-        print(response.css("h3 a").get())
+        print(response.css("h3 a::text").get())
