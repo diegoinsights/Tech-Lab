@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "Panel_and_hvPlot_A_high-level_Data_Visualization_for_Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
