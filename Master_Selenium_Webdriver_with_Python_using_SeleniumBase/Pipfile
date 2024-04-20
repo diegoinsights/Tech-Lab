@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-seleniumbase = "4.25.0"
+seleniumbase = "*"
 
 [dev-packages]
 
